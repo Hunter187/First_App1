@@ -1,3 +1,4 @@
+import { NewsPageModule } from './../news/news.module';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -10,7 +11,9 @@ import { Tab1Page } from './tab1.page';
     IonicModule,
     CommonModule,
     FormsModule,
-    RouterModule.forChild([{ path: '', component: Tab1Page }])
+    RouterModule.forChild([{ path: '', component: Tab1Page }]),
+    NewsPageModule
+    
   ],
   declarations: [Tab1Page]
 })
