@@ -12,7 +12,7 @@ export class NewsPage implements OnInit {
   constructor(private NewsService:NewsService, private router:Router) { }
 
   ngOnInit() {
-    this.NewsService.getData('top-headlines?sources=al-jazeera-english').subscribe(data => {
+    this.NewsService.getData('top-headlines?sources=fox-news').subscribe(data => {
       console.log(data);
       this.data =data;
     })
